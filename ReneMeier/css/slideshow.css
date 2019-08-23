@@ -1,0 +1,99 @@
+
+
+#slideCont {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+/* Hide the images by default */
+
+.sliders {
+    display: none;
+
+}
+
+.cursor {
+    cursor: grab;
+}
+
+/* Next & previous buttons */
+
+.prev, .next  {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 10px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    border-radius: 0 3px 3px 0;
+    display: block;
+    padding-right: 15px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Six columns side by side */
+/* .column {
+    float: left;
+    width: 16.66%;
+  } */
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+#thumbnail {
+    box-sizing: border-box;
+ 
+    margin: auto;
+  
+}
+
+#thumbnail .row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+}
+
+#thumbnail img {
+  width: 100%;
+  height: 50%;
+}
+
+
+/* #thumbnail row {
+    display: flex;
+} 
+
+.column1 {flex: 1.3344; }
+.column2 {flex: 1.3345; }
+.column3 {flex: 0.7505; }
+.column4 {flex: 1.5023; }
+.column5 {flex: 0.75; }
+.column6 {flex: 0.85; }  */
+
+  

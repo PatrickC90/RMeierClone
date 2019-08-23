@@ -1,0 +1,216 @@
+:root {
+    --primary-color: #f6f6f6;
+    --secondary-color: #ff0000;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1120px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+ /*  Top Presentation Bar*/
+.section-presentation {
+    background-color: var(--primary-color);
+    padding: 6px 0px;
+    font-size: 2.5em;
+    border-bottom: 1px solid #eee;
+    font-family: "Source Sans Pro";
+    color: var(--secondary-color);
+}
+
+.section-presentation h4 {
+    line-height: 1.3;
+    font-size: 1em;
+    /* float: right; */
+}
+
+.section-presentation .row-widgets a {
+    padding-right: 15px;
+    margin-right: 10px;
+    float: right;
+}
+
+/*  Title Section    */
+
+.section-title {
+   padding: 6px 0px;
+   /* border-bottom: 1px solid #eee; */
+   font-family: "Source Sans Pro";
+   
+}
+
+
+.section-title img {
+    max-width: 100%;
+    margin: 5px auto;
+    height: auto;
+}
+
+.section-title h3, .section-title h4 {
+    color: #ff1907;
+    /* font-size: 2.2em; */
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.section-title p {
+    display: block;
+    /* margin: 0 0 0 10px; */
+    font-size: 26px;
+    font-weight: bold;
+    color:#333331;
+}
+
+      /*       Navbar Section     */
+
+    #nav  {
+       border: 1px dashed black;
+        box-sizing: border-box;
+        list-style: none;
+        font-size: 25px;
+        font-family: "Source Sans Pro";
+       font-weight: 400;
+       background-color: #323946;
+    }
+
+    #nav li:not(:last-child) {
+        border-right: solid 1px #fff;
+    }
+
+   
+    /*----------- SECTION CONTENT -------------- */
+
+
+    /* Slide Ad */
+
+    .adContainer {
+     box-sizing: border-box;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ff1907;
+    font-size: 25px;
+    margin-top: 30px;
+    border-bottom: 2px solid #ff1907; 
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    }
+
+
+    .marquee {
+        width: 450 auto;
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .marquee span {
+        font-weight: bold;
+        line-height: 30px;
+        color: #ff1907;
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(-100%, 0);
+        }
+      }
+
+      /*     Welcome heading */
+
+
+      .section-welcome {
+        padding: 6px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      }
+  
+      #willkommen {
+          font-family: "Source Sans Pro", sans-serif;
+          line-height: 27px;
+          font-size: 2.1em;
+          font-family: Lora;
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+            text-align: center;        
+            margin-top: 2.5em;
+      }
+
+      #willkommen::before , #willkommen::after {
+          position: absolute;
+          top: 51%;
+          overflow: hidden;
+          width: 45%;
+          height: 1px;
+          content: '\a0';
+          background-color: #EBEBEB;
+      }
+      #willkommen::before {
+          margin-left: -50%;
+          text-align: center;
+      }
+
+      #willkommen::after {
+          margin-left: 5%;
+          text-align: right;
+      }
+
+           /* Text   */
+
+.text-area {
+    padding: 6px 0;
+    padding-top: 2em;
+}
+
+.text-area p {
+    font-family: "Source Sans Pro", sans-serif;
+    /* font-style: normal; */
+    /* font-weight: 300; */
+    color: #343e47;
+}
+
+/*      Footer Section           */
+
+.footerContainer {
+    width: 100%;
+}
+
+    .firstFooter .row {
+        width: 100%;
+    }
+
+.first-footer {
+    background-color: #45474e;
+    padding: 40px 0px 35px 0px;
+    font-family: "Source Sans Pro";
+    line-height: 30px;
+    font-size: 1.2em;
+}
